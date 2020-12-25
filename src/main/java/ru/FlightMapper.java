@@ -19,7 +19,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
         if (current.equals(NULLSTR)) {
             return ZERO;
         } else {
-            return 
+            return Float.
         }
     }
 
