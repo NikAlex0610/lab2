@@ -10,5 +10,6 @@ public class FlightNameMapper extends Mapper<LongWritable, Text, FlightWritableC
 
     private static final String DELIMITER = "\",";
     private static final int FORNAMEAEROPORT = 0;
+    private static final int DESTAEROPORTID = 0;
     
 }
