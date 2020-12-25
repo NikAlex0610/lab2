@@ -8,5 +8,11 @@ import java.io.IOException;
 
 public class FlightWritable implements Writable {
     
+    public FlightWritable(int destAirportID, float arrDelay, float cancelled, float airTime) {
+        this.destAirportID = destAirportID;
+        this.arrDelay = arrDelay;
+        this.cancelled = cancelled;
+        this.airTime = airTime;
+    }
 }
 
