@@ -22,5 +22,15 @@ public class FlightWritableComparable {
             return this.aeroportID;
         }
 
+        public int compareID(Object o) {
+            FlightWritableComparable second = (FlightWritableComparable) o;
+            return Integer.compare(this.aeroportID, second.aeroportID);
+        }
+
+        @Override
+        public int compareTo(Object o) {
+            
+        }
+
     }
 }
