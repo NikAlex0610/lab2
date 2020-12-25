@@ -6,9 +6,9 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class FlightWritable implements Writable {
+public class Writable implements FlightWritable {
 
-    public FlightWritable(int destAirportID, float arrDelay, float cancelled, float airTime) {
+    public Writable(int destAirportID, float arrDelay, float cancelled, float airTime) {
         this.destAirportID = destAirportID;
         this.arrDelay = arrDelay;
         this.cancelled = cancelled;
