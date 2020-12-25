@@ -1,2 +1,5 @@
-package ru;public class FlightWritableComparable {
+package ru;
+
+public class FlightWritableComparable {
+    
 }
