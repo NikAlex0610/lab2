@@ -18,7 +18,9 @@ public class FlightWritableComparable {
             this.indenity = indenity;
         }
 
-        
+        public int getID() {
+            return this.aeroportID;
+        }
 
     }
 }
