@@ -13,6 +13,6 @@ public class FlightWritableComparable {
 
         public FlightWritableComparable() {}
 
-        
+
     }
 }
