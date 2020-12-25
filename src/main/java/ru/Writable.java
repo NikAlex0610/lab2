@@ -23,6 +23,12 @@ public class FlightWritable implements Writable {
         dataOutput.writeFloat(this.airTime);
     }
 
-    
+    @Override
+    public void readFields(DataInput dataInput) throws IOException {
+        this.destAirportID = dataInput.readInt();
+        this.arrDelay = dataInput.readFloat();
+        this.cancelled = dataInput.readFloat();
+        this.airTime = dataInput.readFloat();
+    }
 }
 
