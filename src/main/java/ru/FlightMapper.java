@@ -17,6 +17,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
 
     private static float checkNull(String current) {
         if (current.equals(NULLSTR)) {
+            return ZERO;
+        } else {
             
         }
     }
