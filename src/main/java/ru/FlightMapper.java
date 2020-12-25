@@ -15,7 +15,9 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
     private static final int DESTAEROPORTID = 14;
     private static final int ARRDELAY = 17;
 
-
+    private static float checkNull(String current) {
+        
+    }
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
