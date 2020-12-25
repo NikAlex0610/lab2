@@ -13,6 +13,12 @@ public class FlightWritableComparable {
 
         public FlightWritableComparable() {}
 
+        public FlightWritableComparable(int aeroportID, int indenity) {
+            this.aeroportID = aeroportID;
+            this.indenity = indenity;
+        }
+
+        
 
     }
 }
