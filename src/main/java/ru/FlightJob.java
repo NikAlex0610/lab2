@@ -1,4 +1,4 @@
-package ru;
+package ru.Ivan;
 
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
@@ -14,7 +14,6 @@ public class FlightJob {
             System.err.println("Usage: FlightJob <input path flight> <input path name> <output path>");
             System.exit(-1);
         }
-
         Job job = Job.getInstance();
         job.setJarByClass(FlightJob.class);
         job.setJobName("JoinJob sort");
