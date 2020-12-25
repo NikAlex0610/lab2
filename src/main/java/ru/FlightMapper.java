@@ -1,4 +1,4 @@
 package ru;
 
-public class FlightMapper {
+public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableComparable, Text> {
 }
