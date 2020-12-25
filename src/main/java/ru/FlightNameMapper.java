@@ -17,7 +17,9 @@ public class FlightNameMapper extends Mapper<LongWritable, Text, FlightWritableC
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         if (key.get() > 0) {
             String[] table = value.toString().split(DELIMITER);
-            int dag
+            int destAeroportID = Integer.parseInt(table[DESTAEROPORTID].replaceAll("\"",""));
+            FlightWritableComparable currentKey = new FlightWritableComparable(destAeroportID, FORNAMEAEROPORT);
+            context.write(currentKey, new Text(table[NAMEAEROPORT]));
         }
     }
 }
