@@ -1,9 +1,8 @@
-package ru;
+package ru.Ivan;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-
 import java.io.IOException;
 
 public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableComparable, Text> {
@@ -29,6 +28,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
             String[] table = value.toString().split(DELIMITER);
             int destAeroportID = Integer.parseInt(table[DESTAEROPORTID]);
             float arrDelay = checkNull(table[ARRDELAY]);
+            //float cancelled = Float.parseFloat(table[CANCELLED]);
+            //float airTime = Float.parseFloat(table[AIRTIME]);
             if (arrDelay > ZERO) {
                 FlightWritableComparable currentKey = new FlightWritableComparable(destAeroportID, FORDELAY);
                 context.write(currentKey, new Text(table[ARRDELAY]));
