@@ -41,7 +41,16 @@ public class FlightWritableComparable {
             }
         }
 
-        
+        @Override
+        public void write(DataOutput dataOutput) throws IOException {
+            dataOutput.writeInt(aeroportID);
+            dataOutput.writeInt(indenity);
+        }
 
+        @Override
+        public void readFields(DataInput dataInput) throws IOException {
+            this.aeroportID = dataInput.readInt();
+            this.indenity = dataInput.readInt();
+        }
     }
 }
