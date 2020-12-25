@@ -8,6 +8,11 @@ import java.io.IOException;
 
 public class FlightWritableComparable {
     public class FlightWritableComparable implements WritableComparable {
+        private int aeroportID;
+        private int indenity;
+
+        public FlightWritableComparable() {}
+
         
     }
 }
