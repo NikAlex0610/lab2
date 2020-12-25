@@ -1,4 +1,4 @@
-package ru.Veronika;
+package ru;
 
 import org.apache.hadoop.io.Writable;
 
