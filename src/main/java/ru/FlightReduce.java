@@ -5,5 +5,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class FlightReduce {
+public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, Text>{
+
+    
 }
