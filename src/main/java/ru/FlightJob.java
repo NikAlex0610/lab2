@@ -1,2 +1,5 @@
-package ru;public class FlightJob {
+package ru;
+
+public class FlightJob {
+    
 }
