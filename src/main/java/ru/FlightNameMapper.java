@@ -9,5 +9,6 @@ import java.io.IOException;
 public class FlightNameMapper extends Mapper<LongWritable, Text, FlightWritableComparable, Text>{
 
     private static final String DELIMITER = "\",";
-    private static final int FORNAMEAEROPORT, 
+    private static final int FORNAMEAEROPORT = 0;
+    
 }
