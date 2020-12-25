@@ -23,6 +23,10 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
             String[] table = value.toString().split(DELIMITER);
             int destAeroportID = Integer.parseInt(table[DESTAEROPORTID]);
             float arrDelay = checkNull(table[ARRDELAY]);
+            if (arrDelay > ZERO) {
+                FlightWritableComparable currentKey = new FlightWritableComparable(destAeroportID, FORDELAY);
+                context.write(currentKey, new Text(table[ARRDELAY]));
+            }
         }
     }
 }
