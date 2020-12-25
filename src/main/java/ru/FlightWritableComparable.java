@@ -29,8 +29,19 @@ public class FlightWritableComparable {
 
         @Override
         public int compareTo(Object o) {
-            
+            FlightWritableComparable second = (FlightWritableComparable) o;
+            if (this.aeroportID > second.aeroportID) {
+                return 1;
+            } else if (this.aeroportID < second.aeroportID) {
+                return -1;
+            } else if (this.indenity > second.indenity) {
+                return 1;
+            } else {
+                return -1;
+            }
         }
+
+        
 
     }
 }
