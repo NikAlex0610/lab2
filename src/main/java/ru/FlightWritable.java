@@ -6,9 +6,16 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class Writable implements FlightWritable {
+public class FlightWritable implements Writable {
 
-    public Writable(int destAirportID, float arrDelay, float cancelled, float airTime) {
+    private int destAirportID;
+    private float arrDelay;
+    private float cancelled;
+    private float airTime;
+
+    public FlightWritable() {}
+
+    public FlightWritable(int destAirportID, float arrDelay, float cancelled, float airTime) {
         this.destAirportID = destAirportID;
         this.arrDelay = arrDelay;
         this.cancelled = cancelled;
