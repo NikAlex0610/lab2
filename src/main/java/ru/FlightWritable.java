@@ -39,3 +39,4 @@ public class FlightWritable implements Writable {
     }
 }
 
+
