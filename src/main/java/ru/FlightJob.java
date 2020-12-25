@@ -25,5 +25,7 @@ public class FlightJob {
         job.setPartitionerClass(FlightPartitioner.class);
         job.setGroupingComparatorClass(FlightGroupingComparatorClass.class);
         job.setReducerClass(FlightReduce.class);
+        job.setMapOutputKeyClass(FlightWritableComparable.class);
+        job.setMapOutputValueClass(Text.class);
     }
 }
