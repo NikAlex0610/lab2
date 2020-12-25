@@ -9,5 +9,7 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class FlightJob {
-
+    public static void main(String[] args) throws Exception {
+        
+    }
 }
