@@ -10,6 +10,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class FlightJob {
     public static void main(String[] args) throws Exception {
-        
+        if (args.length != 3) {
+            System.err.println("Usage: FlightJob <input path flight> <input path name> <output path>");
+            System.exit(-1);
+        }
     }
 }
